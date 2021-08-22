@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  instrument-service:
+    build: ./instrument
+    volumes:
+      - ./instrument:/usr/src/app
+    ports:
+      - 5001:5001
